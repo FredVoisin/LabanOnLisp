@@ -15,3 +15,19 @@ dépôt, mais par la notice d'origine figurant dans les sources :
 En résumé : utilisation, copie et œuvres dérivées autorisées, à
 condition qu'aucune rémunération ne soit demandée et que cette notice
 soit conservée dans toutes les copies.
+
+Code de tiers
+-------------
+
+Certains fichiers sont l'œuvre d'autres auteurs, inclus tels qu'ils
+étaient utilisés à l'époque. Ils restent soumis à leurs propres
+notices, reproduites dans leur en-tête :
+
+- save-object.lisp : Kerry V. Koitzsch, Kevin Thompson (1992-1995)
+- drag-and-drop.lisp : Dan S. Camper (1996)
+- dynamic-views.lisp, scrollers.lisp, scrolling-windows.lisp,
+  picture-files.lisp, view-example.lisp, windoid-key-events.lisp :
+  Apple Computer, Inc. (1989-1994), Digitool, Inc. (1995)
+- simple-edit-value.lisp : Steve Strassmann (1994)
+- Fredgram.lisp : adapté par Frédéric Voisin (1999) du code de
+  *Paradigms of AI Programming*, Peter Norvig (1991)
