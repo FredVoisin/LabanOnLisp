@@ -1,0 +1,17 @@
+Licence des sources historiques (répertoire legacy/)
+=====================================================
+
+Les fichiers de ce répertoire sont publiés à titre de référence
+historique. Ils ne sont PAS couverts par la licence MIT du reste du
+dépôt, mais par la notice d'origine figurant dans les sources :
+
+    (c) 1999 Frederic Voisin
+    All rights reserved. Use and copying of this software and
+    preparation of derivative works based upon this software are
+    permitted and may be copied as long as no fees or compensation
+    are charged for use, copying, or accessing this software and all
+    copies of this software include this copyright notice.
+
+En résumé : utilisation, copie et œuvres dérivées autorisées, à
+condition qu'aucune rémunération ne soit demandée et que cette notice
+soit conservée dans toutes les copies.
