@@ -1,0 +1,5 @@
+.DS_Store
+._*
+*.fasl
+*.dx64fsl
+*.lx64fsl

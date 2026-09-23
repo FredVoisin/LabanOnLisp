@@ -1,0 +1,3 @@
+legacy/** -text
+legacy/**/README.md text
+legacy/LICENSE text
