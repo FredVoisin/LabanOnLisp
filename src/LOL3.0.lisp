@@ -10,12 +10,10 @@
 ;*                                                                               *
 ;*                                                                               *
 ;*********************************************************************************
-;;; Copyright (c) 1999 Frederic Voisin
-;;; All rights reserved. Use and copying of this software and preparation of
-;;; derivative works based upon this software are permitted and may be
-;;; copied as long as no fees or compensation are charged for use, 
-;;; copying, or accessing this software and all copies of this software
-;;; include this copyright notice.
+;;; Copyright (c) 1999-2026 Frédéric Voisin
+;;; Licensed under the PolyForm Noncommercial License 1.0.0
+;;; <https://polyformproject.org/licenses/noncommercial/1.0.0> (see LICENSE)
+;;; Required Notice: Copyright (c) 1999-2026 Frédéric Voisin (https://fredvoisin.com)
 ;;; **********************************************************************
 
 

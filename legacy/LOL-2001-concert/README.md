@@ -19,7 +19,7 @@ Cette version est celle utilisée pour *L'Écarlate*, de Kasper T.
 Toeplitz et Myriam Gourfink, créée le 7 juin 2001 à l'Ircam (Espace de
 projection, Paris), dans le cadre du festival Agora. Elle est
 contemporaine de la version de neuromuse utilisée pour le même concert :
-https://github.com/FredVoisin/neuromuse/tree/main/legacy/neuromuse-2001-concert
+https://github.com/FredVoisin/neuromuse/tree/master-archive/legacy/neuromuse-2001-concert
 
 Rôle de LOL dans l'œuvre : [à compléter]
 

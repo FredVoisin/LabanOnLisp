@@ -2,8 +2,8 @@ Licence des sources historiques (répertoire legacy/)
 =====================================================
 
 Les fichiers de ce répertoire sont publiés à titre de référence
-historique. Ils ne sont PAS couverts par la licence MIT du reste du
-dépôt, mais par la notice d'origine figurant dans les sources :
+historique, tels qu'ils ont été écrits entre 1999 et 2001. Ils portent
+la notice d'origine suivante, conservée à l'identique :
 
     (c) 1999 Frederic Voisin
     All rights reserved. Use and copying of this software and
@@ -12,16 +12,19 @@ dépôt, mais par la notice d'origine figurant dans les sources :
     are charged for use, copying, or accessing this software and all
     copies of this software include this copyright notice.
 
-En résumé : utilisation, copie et œuvres dérivées autorisées, à
-condition qu'aucune rémunération ne soit demandée et que cette notice
-soit conservée dans toutes les copies.
+Depuis 2026, l'auteur distribue également ces fichiers sous la licence
+PolyForm Noncommercial 1.0.0 du dépôt (voir ../LICENSE). Les deux
+textes autorisent l'usage non commercial.
+
+Required Notice: Copyright (c) 1999-2026 Frédéric Voisin (https://fredvoisin.com)
 
 Code de tiers
 -------------
 
-Certains fichiers sont l'œuvre d'autres auteurs, inclus tels qu'ils
-étaient utilisés à l'époque. Ils restent soumis à leurs propres
-notices, reproduites dans leur en-tête :
+Certains fichiers, présents dans legacy/ et repris dans src/, sont
+l'œuvre d'autres auteurs, inclus tels qu'ils étaient utilisés à
+l'époque. Ils ne relèvent d'aucune des deux licences ci-dessus et
+restent soumis à leurs propres notices, reproduites dans leur en-tête :
 
 - save-object.lisp : Kerry V. Koitzsch, Kevin Thompson (1992-1995)
 - drag-and-drop.lisp : Dan S. Camper (1996)
