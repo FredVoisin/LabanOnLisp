@@ -1,0 +1,22 @@
+#|
+(make-instance 'window
+  :window-title "Echo"
+  :view-size #@(240 180))
+
+
+
+(make-instance 'window)
+(set-window-title (target) "Echo")
+(window-title (target))
+
+
+
+(setq win (make-instance 'fred-dialog-item))
+(initialize-instance win)
+|#
+
+
+(setq win (make-instance 'fred-window))
+(initialize-instance win
+                     :view-font ("Geneva" 0 :bold)
+                     :window-title "YOU")

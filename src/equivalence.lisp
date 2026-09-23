@@ -1,0 +1,54 @@
+#|
+(defun equiv (list set)
+  (let ((new-symb (gensym)))
+    (dolist (elt set list)
+      (setf list (substitute new-symb
+                             elt
+                             list)))))
+|#
+
+(defun equiv (list set)
+  (let ((new-symb (intern 
+                   (morph::concatstrings
+                    (mapcar #'(lambda (s) (format nil "~S:" s)) set)))))
+    (dolist (elt set list)
+      (setf list (substitute new-symb
+                             elt
+                             list)))))
+
+#|
+(equiv '(1 2 3 4 5 6 5 4 3 2 1) '(1 2 5))
+|#
+
+(defun equival1 (set list1 &optional other-lists)
+  (let ((new-symb (intern 
+                   (morph::concatstrings
+                    (mapcar #'(lambda (s) (format nil "~S:" s)) set))))
+        (r (append (list list1) other-lists)))
+    (if other-lists
+      (dotimes (n (length r) r)
+        (dolist (elt set)
+          (setf (nth n r) (substitute new-symb
+                                      elt
+                                      (nth n r)))))
+      (equiv list1 set))))
+
+(om::defmethod! equival ((set list) (seq1 list) &rest other-lists)
+  :initvals '(nil nil nil)
+  :icon 128
+  (equival1 set seq1 other-lists))
+
+(om::defmethod! ldl-equival ((set list) (l-seq list))
+  :initvals '(nil nil)
+  :icon 128
+  (equival1 set (car l-seq) (cdr l-seq)))
+
+#|
+(defvar a '(3- 1 5 3- 2 1 2 1 s 1 5 3- 2 1 s 3- 2 1 5 2 3- 5 3- 2 1 3- 2 1 5 2 1 2 1 s 1 5 3- 2 1 1 s 3- 2 1 5 1 5 5 3- 1 3- 2 1 5 3- 2 1 3- 2 1 1 5 3- 2 1 s 3- 2 1 3- 5 5 3- 2 1 2 1 soupirs 3- 2 1 3- 5 3 2 1 2 1 s 1 3 5 3- 2 1 s 3 2 1 3- 5 3 2 1 3n 2 1 5 5 3n 2 1 3 2 1 5 3- 2 1 soupirs))
+(defvar b '(1 3 1 s 3 1 5 3 2 1 3 3 3 1 1 5 5 3 3 3 1 s 5 3 1 1 3 1 s 3 3 1 5 3 1 3 3 3 1 5 5 5 3 3 1 s 5 3 1 s 3 1 s 3 2 1 3 3 2 1 3 3 3 1 5 5 1 3 s soupirs 5 3 1 s 3- 1 s 3 1 5 3 1 3 3 3 1 5 3 3 3 s 5 3 1 1 3 1 s 3 3 1 7 1 s 3 1 3 1 7 1 3 3 s 3 3 s 3 1 7 1 3 1 3 1 7 1 7 s 3 1 3 5 3 3 1 3 5 5 3 s 5 4 1 1 4 1 s 4 1 4 4 1 4 4 5 4 1 4 5 6- 4 6- ?))
+
+(equival '(3 3- 3n) a)
+(equival '(3 3- 3n) a b)
+(morph::ldl-distance (list a b) 1 1 0 "rel" "short")
+(morph::ldl-distance (equival '(3 3- 3n) a b) 1 1 0 "rel" "short")
+|#
