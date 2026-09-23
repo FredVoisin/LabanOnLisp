@@ -19,7 +19,12 @@ fichiers se trouve dans
 ## Licence
 
 PolyForm Noncommercial 1.0.0 (voir [`../LICENSE`](../LICENSE)), sauf
-pour le code de tiers (`save-object.lisp`, `drag-and-drop.lisp`, les
+pour le code de tiers (`drag-and-drop.lisp`, les
 exemples MCL d'Apple et Digitool, `simple-edit-value.lisp`,
 `Fredgram.lisp`), qui reste soumis à ses propres notices : voir
 [`../legacy/LICENSE`](../legacy/LICENSE).
+
+`save-object.lisp` (Koitzsch/Thompson), chargé par `LOL3.0.lisp` pour
+la sauvegarde des situations, n'est pas repris ici : il reste
+disponible dans `legacy/LOL-2001-concert/` et sera remplacé lors du
+portage.
