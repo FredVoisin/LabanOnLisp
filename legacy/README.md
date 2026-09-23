@@ -14,3 +14,9 @@ dépôt : voir [LICENSE](LICENSE).
 
 D'autres versions antérieures (LOL 2.x, 1999-2000) pourront être
 ajoutées ultérieurement.
+
+## Remerciements
+
+La mise en ligne de ces sources historiques doit beaucoup à
+Florian Iochem, [musicien chercheur](https://fabricadesites.fcsh.unl.pt/ncmm/florian-iochem/).
+Qu'il en soit remercié.
